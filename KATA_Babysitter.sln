@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KATA_Babysitter", "KATA_Babysitter\KATA_Babysitter.csproj", "{1AB5A2F7-7ADB-4696-ADA9-B98049232819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KATA_BabysitterTests", "KATA_BabysitterTests\KATA_BabysitterTests.csproj", "{9841D68E-6622-4C19-B822-42C76405E77B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1AB5A2F7-7ADB-4696-ADA9-B98049232819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB5A2F7-7ADB-4696-ADA9-B98049232819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB5A2F7-7ADB-4696-ADA9-B98049232819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9841D68E-6622-4C19-B822-42C76405E77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9841D68E-6622-4C19-B822-42C76405E77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9841D68E-6622-4C19-B822-42C76405E77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9841D68E-6622-4C19-B822-42C76405E77B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

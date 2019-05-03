@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace KATA_Babysitter
 {
-    class Program
+    class TimeCard
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
