@@ -15,6 +15,8 @@ namespace KATA_Babysitter
             Family familyB = new Family("The Klumps Family", 12);
             Family familyC = new Family("The Miller Family", 21);
             string familySelection;
+            int clockInTime;
+            int hoursWorked;
 
             
 
@@ -27,27 +29,41 @@ namespace KATA_Babysitter
                 $"3) {familyC.Name}\n");
 
             //add loop
-            familySelection = Console.ReadLine().ToString();
-            if (familySelection == "1" || familySelection == familyA.Name)
+            bool userSelectedFamily = false;
+            while (true)
             {
-                familySelection = familyA.Name;
-                Console.WriteLine($"You\'ve selected {familySelection}\n ");
+                familySelection = Console.ReadLine().ToString();
+                if (familySelection == "1" || familySelection == familyA.Name)
+                {
+                    userSelectedFamily = true;
+                    familySelection = familyA.Name;
+                    Console.WriteLine($"You\'ve selected {familySelection}\n ");
+                    break;
+                }
+                else if (familySelection == "2" || familySelection == familyB.Name)
+                {
+                    userSelectedFamily = true;
+                    familySelection = familyB.Name;
+                    Console.WriteLine($"You\'ve selected {familySelection}\n ");
+                    break;
+                }
+                else if (familySelection == "3" || familySelection == familyC.Name)
+                {
+                    userSelectedFamily = true;
+                    familySelection = familyC.Name;
+                    Console.WriteLine($"You\'ve selected {familySelection}\n ");
+                    break;
+                }
+                else
+                    Console.WriteLine("I'm sorry, but that was not a valid input. Please make a selection from the list of families...");
+
             }
-            else if (familySelection == "2" || familySelection == familyB.Name)
-            {
-                familySelection = familyB.Name;
-                Console.WriteLine($"You\'ve selected {familySelection}\n ");
-            }
-            else if (familySelection == "3" || familySelection == familyC.Name)
-            {
-                familySelection = familyC.Name;
-                Console.WriteLine($"You\'ve selected {familySelection}\n ");
-            }
-            else
-                Console.WriteLine("Please try again...");
 
             Console.WriteLine($"What time did you clock in, {babySitterName}?");
+            clockInTime = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine($"How many hours did you work today?");
+            hoursWorked = int.Parse(Console.ReadLine());
 
             
 
