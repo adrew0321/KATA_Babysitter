@@ -10,16 +10,28 @@ namespace KATA_Babysitter
     {
         public string Name { get; set; }
         public int RatePerHour { get; set; }
-        public int RateAdjustment { get; set; }
-        public TimeSpan startTime = new TimeSpan(17, 0, 0);
-        public TimeSpan EndTime = new TimeSpan(4, 0, 0);
+        public DateTime startTime = new DateTime(2019, 5, 3, 17, 0 , 0);
+        public DateTime EndTime = new DateTime(2019, 5, 3, 4, 0, 0);
+        
 
-        public Family(string name, int ratePerHour, int rateAdjustment)
+        public Family()
+        {
+
+        }
+
+        public Family(string name)
+        {
+            Name = name;
+        }
+
+        public Family(string name, int ratePerHour)
         {
             Name = name;
             RatePerHour = ratePerHour;
-            RateAdjustment = RateAdjustment;
         }
 
+
+
     }
+
 }

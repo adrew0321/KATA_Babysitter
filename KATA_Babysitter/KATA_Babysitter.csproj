@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Family.cs" />
+    <Compile Include="Family\Family.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeCard.cs" />
+    <Compile Include="TimeCard\TimeCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

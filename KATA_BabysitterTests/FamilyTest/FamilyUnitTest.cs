@@ -12,16 +12,18 @@ namespace KATA_BabysitterTests
     public class FamilyUnitTest
     {
         [Test]
-        public void GetFamilyName()
+        public void GetFamilyAlwaysReturnsExpectedValues()
         {
-            //arrange
-            Family testFamily = new Family("The Drews", 15, 5);
-
-            //act
-
+            //arrange & act
+            Family testFamily = new Family
+            {
+                Name = "The Drews",
+                RatePerHour = 15,
+            };
 
             //assert
             Assert.AreEqual("The Drews",testFamily.Name);
+            Assert.AreEqual(15, testFamily.RatePerHour);
             
         }
     }
