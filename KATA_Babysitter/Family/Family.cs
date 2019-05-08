@@ -31,7 +31,6 @@ namespace KATA_Babysitter
         }
 
 
-
     }
 
 }

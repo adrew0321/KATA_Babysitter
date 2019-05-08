@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KATA_Babysitter.Enums;
 
 namespace KATA_Babysitter
 {
@@ -18,6 +19,7 @@ namespace KATA_Babysitter
             int clockInTime;
             int hoursWorked;
 
+            
             
 
             Console.WriteLine("Welcome to the Baby-Sitter TimeSheet Tracker \n\nPlease provide your name below and lets begin...");
@@ -55,22 +57,30 @@ namespace KATA_Babysitter
                     break;
                 }
                 else
-                    Console.WriteLine("I'm sorry, but that was not a valid input. Please make a selection from the list of families...");
+                    userSelectedFamily = false;
+                    Console.WriteLine("I'm sorry, but that was not a valid input. Please try again...");
 
             }
 
             Console.WriteLine($"What time did you clock in, {babySitterName}?");
             clockInTime = Convert.ToInt32(Console.ReadLine());
+            
 
             Console.WriteLine($"How many hours did you work today?");
             hoursWorked = int.Parse(Console.ReadLine());
 
-            
+
 
        
 
 
         }
+
+        public static void UserInputValidator(string userInput)
+        {
+
+        }
+
 
     }
 }
